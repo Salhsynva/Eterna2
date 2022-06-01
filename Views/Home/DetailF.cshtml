@@ -1,0 +1,32 @@
+﻿@model Feature
+
+@{
+    ViewData["Title"] = "DetailF";
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">icon</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Body</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">@Model.Id</th>
+                        <td> <i class="@Model.Icon"></i></td>
+                        <td>@Model.Title</td>
+                        <td>@Model.Body</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
